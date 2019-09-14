@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <div class="form-group m-form__group">
+        <label>Image 1</label>
+        <div class="input-group">
+            <span class="input-group-btn">
+                <span class="btn btn-default btn-file">
+                    Browse…
+                    <input type="file" onchange="uploadPreview(this,'img-preview')" name="doc_image">
+                </span>
+            </span>
+        </div>
+
+        <!-- Preview Div -->
+        <img class="img-preview" style="width:300px;" />
+
+    </div>
+
+    <div class="form-group m-form__group">
+        <label>Image 2</label>
+        <div class="input-group">
+            <span class="input-group-btn">
+                <span class="btn btn-default btn-file">
+                    Browse…
+                    <input type="file" onchange="uploadPreview(this,'img-preview-two')" name="doc_image">
+                </span>
+            </span>
+        </div>
+
+        <!-- Preview Div -->
+        <img class="img-preview-two" style="width:300px;" />
+
+    </div>
+
+    <!-- Image preview js included below -->
+    <script src="naz-preview.js"></script>
+
+</body>
+
+</html>
